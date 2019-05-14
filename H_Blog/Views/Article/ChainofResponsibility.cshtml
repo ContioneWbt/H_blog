@@ -12,26 +12,7 @@
     <link href="~/Content/css/detail.css" rel="stylesheet" />
 }
 <!-- 导航 -->
-<nav class="blog-nav layui-header">
-    <div class="blog-container">
-        <!-- QQ互联登陆 -->
-        <a href="javascript:;" class="blog-user">
-            <i class="fa fa-qq"></i>
-        </a>
-        <a href="javascript:;" class="blog-user layui-hide">
-            <img src="~/Content/images/Absolutely.jpg" alt="Absolutely" title="Absolutely" />
-        </a>
-        <!-- 不落阁 -->
-        <a class="blog-logo" href="/Home/Index">Contione</a>
-        <!-- 导航菜单 -->
-        <!-- 导航菜单 -->
-        @Html.Partial("_Title", "文章专栏")
-        <!-- 手机和平板的导航开关 -->
-        <a class="blog-navicon" href="javascript:;">
-            <i class="fa fa-navicon"></i>
-        </a>
-    </div>
-</nav>
+@Html.Partial("_Title", "文章专栏")
 <!-- 主体（一般只改变这里的内容） -->
 <div class="blog-body">
     <div class="blog-container">
@@ -85,15 +66,15 @@
                             &nbsp; &nbsp; <span style="color:#EE33EE;"> 责任链模式的结构和角色：</span>
                         </p>
                         <p style="text-align:center;">
-                           
+
                             <img src="~/Content/images/设计模式/ChainofResponsibility.png" width="100%" height="auto" title="pagesize演示" alt="pagesize演示" />
                         </p>
                         <hr />
                         <p>
                             &nbsp;&nbsp;&nbsp;&nbsp;抽象处理者(Handler)角色：
-定义出一个处理请求的接口。如果需要，接口可以定义 出一个方法以设定和返回对下家的引用。
-具体处理者(ConcreteHandler)角色：
-具体处理者接到请求后，可以选择将请求处理掉，或者将请求传给下家。由于具体处理者持有对下家的引用，因此，如果需要，具体处理者可以访问下家。
+                            定义出一个处理请求的接口。如果需要，接口可以定义 出一个方法以设定和返回对下家的引用。
+                            具体处理者(ConcreteHandler)角色：
+                            具体处理者接到请求后，可以选择将请求处理掉，或者将请求传给下家。由于具体处理者持有对下家的引用，因此，如果需要，具体处理者可以访问下家。
                         </p>
                         <hr />
                         <p>
@@ -103,7 +84,7 @@
                         <p>
                             &nbsp; &nbsp; 在生活中，公司部门举办活动需要申请金费，如果金费<=1000,部门经理就可以批准发放，如果金额超过1000而<=5000,部门经理无权力批准，副总经理可以批准发放，如果金额超过5000而<=10000,副总经理没有权力批准，此时只有总经理可以批准，而超过10000，就要就行会议决定。对于这样的需求，每个角色的责任是不一样的，如果使用传统的方式，可能是写个if多条件判断，可以满足现有的需要，但是后面增加新的角色赋予责任，就需要改变if结构判断，违背设计原则中的对扩展开发，对修改关闭原则。使用责任链模式可以很方便的扩展。
                         </p>
-                      
+
 <pre class="prettyprint linenums lang-js">
 
     /// 行为请求    
