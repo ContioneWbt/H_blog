@@ -123,7 +123,9 @@
     <Content Include="Content\APlayer\dist\custom.js" />
     <Content Include="Content\APlayer\music\乌龟组合.mp3" />
     <Content Include="Content\APlayer\music\浪子康.mp3" />
+    <Content Include="Content\Article\表达式目录树.jpg" />
     <Content Include="Content\Article\正则.png" />
+    <Content Include="Content\Article\特性.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\article-detail.min.css" />
